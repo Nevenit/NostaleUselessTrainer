@@ -35,7 +35,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.connectionStatusLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.TestPingButton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -45,7 +48,7 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.connectionStatusLabel);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(14, 12);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(190, 84);
             this.groupBox1.TabIndex = 0;
@@ -95,18 +98,44 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Stats:";
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.TestPingButton);
+            this.groupBox2.Location = new System.Drawing.Point(12, 102);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(190, 100);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Misc";
+            // 
+            // TestPingButton
+            // 
+            this.TestPingButton.Location = new System.Drawing.Point(6, 22);
+            this.TestPingButton.Name = "TestPingButton";
+            this.TestPingButton.Size = new System.Drawing.Size(88, 23);
+            this.TestPingButton.TabIndex = 0;
+            this.TestPingButton.Text = "Test ping";
+            this.TestPingButton.UseVisualStyleBackColor = true;
+            this.TestPingButton.Click += new System.EventHandler(this.TestPingButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(547, 334);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.Name = "Form1";
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
         }
+
+        private System.Windows.Forms.Button TestPingButton;
+
+        private System.Windows.Forms.GroupBox groupBox2;
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
